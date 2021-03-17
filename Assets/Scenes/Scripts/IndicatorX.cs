@@ -44,7 +44,7 @@ public class IndicatorX : MonoBehaviour
             //make self yellow
             GetComponent<Image>().color = isComplete ? completedColor : color;
 
-            x = (Screen.width - spriteWidth) / 2 - (Screen.width * 7 / 100);
+            x = (Screen.width - spriteWidth) / 2 - 30;
             SetY(objPosition);
         }
         else if (objPosition.x < 0.07)  // Objective is on the left, 
@@ -52,7 +52,7 @@ public class IndicatorX : MonoBehaviour
             //make self yellow
             GetComponent<Image>().color = isComplete ? completedColor : color;
 
-            x = -(Screen.width - spriteWidth) / 2 + (Screen.width * 7 / 100);
+            x = -((Screen.width - spriteWidth) / 2 - 30);
             SetY(objPosition);
 
         }
